@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="@dimen/_24sdp"
+    android:scrollbars="none"
+    tools:context=".activities.SignInActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="Welcome back"
+            android:textColor="#283747"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="login to continue"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:id="@+id/input_email"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            android:background="@drawable/background_input"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:hint="Email"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:id="@+id/input_password"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            android:background="@drawable/background_input"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:hint="Password"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:animateLayoutChanges="true">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:id="@+id/btnsignin"
+                android:text="Sign In"
+                android:backgroundTint="#283747"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/_8sdp"/>
+            <ProgressBar
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:id="@+id/progress"
+                android:visibility="invisible"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textColor="#283747"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            android:text="Create new Account"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
